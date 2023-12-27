@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Nokora:wght@100;400;700&family=Open+Sans:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #edf4f5;
+}
+
+#login-background {
+  background-color: #193c96;
+}
+
+.border-red {
+  border: 2px solid #d33c64 !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+div.error {
+  padding: 7px;
+  background: #ffefef;
+  border: 1px solid #d53c64;
+  color: #d53c64;
+  border-radius: 4px;
+  margin: 20px 0;
+  margin-left: 2px;
+  width: 35%;
+  text-align: center;
+}
+
+input.error {
+  border: 1px solid #d53c64;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #193c96;
+}
+.custom-input::placeholder {
+  color: #42a4c4 !important;
+}
+
+.custom-input::focus {
+  outline: none !important;
+  border: 1px solid red !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #0c66a9;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a:hover {
+  color: #777;
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
+
+.header .logo img {
+  width: 100px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.heading p {
+  color: #828282;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Displaysurveylist */
+
+.normal {
+  background-color: #edf4f5;
+  margin-top: 1%;
+  padding: 40px;
+  /* border-radius: 25px; */
+  display: "flex";
+  justify-content: center;
+  align-items: center;
+}
+
+.admin {
+  background-color: #edf4f5;
+  margin-top: 40px;
+  padding: 50px;
+}
+
+.userLineBreak {
+  border: none !important;
+}
+
+.userLineBreak:after {
+  content: "∿∿∿∿∿∿∿∿∿∿∿∿"; /* Ratio -> font-size/letter-spacing = 6.25 */
+  letter-spacing: -9.6px;
+  font-size: 60px;
+}
+
+.super-app-theme--header {
+  background-color: #0c66a9;
+  color: #ffffff;
+  text-align: center;
+  width: 1000px;
+}

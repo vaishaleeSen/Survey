@@ -1,0 +1,140 @@
+What's included in ISI-Survey(Form submission)
+The ISI Survey includes two main folders, client and server. The directories that live in the the client is those responsible for what the user see and interact with. Conversely the diectories that live in the server are api and logic that interact with database.
+
+package.json : Since this project is uses node package manager (npm) we will see package.json file in client and server directory that contains metadata such as name, version, dependencies, scripts (used to build and run the project).
+
+Fonts In this project we used Google font. There are two fonts we are using those are open sans for English text and nokora for Khmer font.
+
+Images and icons are located in: client/src/assets.
+
+Icons for icons we are using bootstrap-icons icons for the components. For favicons is located in client/public/favicon.ico.
+
+Technologies
+Frontend
+React
+ReactGlobalContext
+JavaScript
+React-Bootstrap
+MUI datagrid
+Backend
+Node.js
+Express.js
+MongoDB
+Mongoose
+Directory structure
+Here's what you can expect to find inside the ISI survey.
+
+[isi-survey]
+├── client/
+│   ├── public/
+│   │   └── media
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── isi_logo.svg
+│   │   │   └── ThankYou.png
+│   │   ├── components/
+│   │   │   ├── boilerplate/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   └── Spinner.jsx
+│   │   │   └── Survey/
+│   │   │       ├── createQuestionComponents.jsx
+│   │   │       ├── CreateSurvey.jsx
+│   │   │       ├── displayQuestionComponents.jsx
+│   │   │       ├── DisplayResult.jsx
+│   │   │       ├── displayResultComponents.jsx
+│   │   │       ├── DisplaySurvey.jsx
+│   │   │       ├── DisplaySurveyList.jsx
+│   │   │       └── SurveySubmit.jsx
+│   │   ├── context/
+│   │   │   └── AuthContext.js
+│   │   ├── hooks/
+│   │   │   ├── useAuthContext.js
+│   │   │   ├── useLogin.js
+│   │   │   ├── useLogout.js
+│   │   │   └── useSignup.js
+│   │   ├── pages/
+│   │   │   ├── Login.jsx
+│   │   │   ├── NotFound.jsx
+│   │   │   ├── Signup.jsx
+│   │   │   └── Welcome.jsx
+│   │   ├── utils/
+│   │   │   ├── findInputError.js
+│   │   │   └── isFormInvalid.js
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── App.test.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   ├── logo.svg
+│   │   ├── reportWebVitals.js
+│   │   └── setupTests.js
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+│   └── README.md
+├── server/
+│   ├── controllers/
+│   │   ├── questionController.js
+│   │   ├── surveyController.js
+│   │   └── userController.js
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   ├── models/
+│   │   ├── questionModel.js
+│   │   ├── surveyModel.js
+│   │   └── userModel.js
+│   ├── routes/
+│   │   ├── questions.js
+│   │   ├── surveys.js
+│   │   └── users.js
+│   ├── .env
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+└── README.md
+Package contents
+Here's what you can expect to find in each of the directories and files in the ISI Survey project:
+
+/client: contain the required directories and files for the user.
+/client/public: You can find the favicon and SPA index.html
+/client/src: contain the app page, components, hooks, boilerplate, context, utils directories, as well as other necessary files for front-end.
+/client/README.md: Front-End documents
+/server : contain the required directories and file for API and database interactions.
+/server/controller handling the incoming requests from the client.
+ISI Survey API
+API for survey results
+This api need token authorization localhost:5000/api/surveys
+Installing the project
+Requirement
+Project can be install using git commands, Node and npm
+
+git and github:
+You will need to register SSH key with your github account.
+One more method is to simply signin to your github account during the project cloning.
+node js:
+During the current development my node version is v18.12.1
+npm
+You'll need npm, It will be come out of the box
+Setup for Local development
+Clone this project using git
+Use npm install for the three main directories
+cd client && npm install
+cd server && npm install
+cd .. && npm install
+Create Mongo Atlas account.
+Create a new Database
+Get the database URI
+Create a new .env file
+DB_URI=
+PORT=
+JWT_SECRET=
+Go to root directory
+Run npm run dev
+Licenses and attribution
+Contributing
+ISI-Survey App User Documentation
+Introduction
+This application allows users to create surveys, answer surveys, and view survey results. Admin users have additional features like managing surveys and tracking survey results.
+
+This user documentation will guide you through the process of, logging in, creating surveys, answering surveys, and viewing survey results.
